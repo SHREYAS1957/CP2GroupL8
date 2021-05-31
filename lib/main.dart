@@ -41,27 +41,30 @@ class MyApp extends StatelessWidget {
                   mainAxisSpacing: 10,
                   children: [
                     Container(
-                      child: Card(
-                          elevation: 10,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10)),
-                          color: Colors.red,
-                          child: Column(
-                            children: [
-                              Padding(padding: EdgeInsets.only(top: 50)),
-                              Icon(
-                                Icons.credit_card,
-                                size: 50,
-                                color: Colors.white,
-                              ),
-                              Padding(padding: EdgeInsets.only(top: 10)),
-                              Text(
-                                'Credit Cards',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          )),
+                      child: InkWell(
+                        child: Card(
+                            elevation: 10,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            color: Colors.red,
+                            child: Column(
+                              children: [
+                                Padding(padding: EdgeInsets.only(top: 50)),
+                                Icon(
+                                  Icons.credit_card,
+                                  size: 50,
+                                  color: Colors.white,
+                                ),
+                                Padding(padding: EdgeInsets.only(top: 10)),
+                                Text(
+                                  'Credit Cards',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(color: Colors.white),
+                                )
+                              ],
+                            )),
+                        
+                      ),
                     ),
                     Container(
                       child: Card(
@@ -282,3 +285,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
