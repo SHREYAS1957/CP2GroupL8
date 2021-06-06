@@ -1,6 +1,6 @@
-# quikk_aid
+# Quikk_aid
 
-A new Flutter project.
+A flutter app for Emergency Medical Assistance
 
 ## Getting Started
 
