@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Sidebar extends StatelessWidget{
+class Sidebar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -8,21 +8,53 @@ class Sidebar extends StatelessWidget{
         children: <Widget>[
           Container(
               width: double.infinity,
-              height: 100,
+              height: 200,
               padding: EdgeInsets.all(20),
-              color: Colors.red
-          ),
+              color: Colors.red,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      top: 40,
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Quikk-Aid',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 40,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                      top: 10,
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'An App for First-Aid and Emergency Medical Assistance',
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                    ),
+                  )
+                ],
+              )),
           ListTile(
             leading: Icon(Icons.language_sharp),
-            title: Text('Language', style: TextStyle(fontSize: 18
-            ),
+            title: Text(
+              'Language',
+              style: TextStyle(fontSize: 18),
             ),
             onTap: null,
           ),
           ListTile(
             leading: Icon(Icons.settings),
-            title: Text('Settings', style: TextStyle(fontSize: 18
-            ),
+            title: Text(
+              'Settings',
+              style: TextStyle(fontSize: 18),
             ),
             onTap: null,
           ),
