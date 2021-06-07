@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './activities/side_bar.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,11 +16,9 @@ class MyApp extends StatelessWidget {
             bottom: TabBar(
               labelStyle: TextStyle(fontSize: 15),
               tabs: [
-                Tab(
-                  text: 'Tab 1',
-                ),
-                Tab(text: 'Tab 2'),
-                Tab(text: 'Tab 3'),
+                Tab(text: 'First Aid', icon: Icon(Icons.accessibility_outlined)),
+                Tab(text: 'Call', icon: Icon(Icons.add_ic_call_sharp)),
+                Tab(text: 'Locate', icon: Icon(Icons.add_location_alt_sharp)),
               ],
             ),
             centerTitle: true,
@@ -30,6 +29,7 @@ class MyApp extends StatelessWidget {
             toolbarHeight: 120,
             backgroundColor: Colors.red,
           ),
+          drawer: Sidebar(),
           body: TabBarView(
             children: [
               Center(
@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
                                 ),
                                 Padding(padding: EdgeInsets.only(top: 10)),
                                 Text(
-                                  'Credit Cards',
+                                  'Chocking',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(color: Colors.white),
                                 )
@@ -82,7 +82,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'Credit Cards',
+                                'Vertigo',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -105,7 +105,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'Credit Cards',
+                                'Fracture',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -128,7 +128,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'Credit Cards',
+                                'Amputation',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -151,7 +151,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'Credit Cards',
+                                'Snake Bite',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -174,7 +174,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'Credit Cards',
+                                'Epileptic Shock',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -197,7 +197,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'Credit Cards',
+                                'Drowning',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -220,7 +220,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'Credit Cards',
+                                'Heart attack',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -243,7 +243,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'Credit Cards',
+                                'Burns',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -266,7 +266,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'Credit Cards',
+                                'i dont know',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -276,8 +276,8 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Text('Tab 2'),
-              Text('Tab 3')
+              Center(child: Text("Add numbers to call")),
+              Center(child: Text("Nearest hospitals location")),
             ],
           ),
         ),
