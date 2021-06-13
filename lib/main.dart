@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:quikk_aid/location/google_map_page.dart';
 import 'package:quikk_aid/location/page_set_loca.dart';
 import './activities/side_bar.dart';
 
@@ -11,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
