@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quikk_aid/location/google_map_page.dart';
+import 'package:quikk_aid/location/page_set_loca.dart';
 import './activities/side_bar.dart';
 
 void main() {
@@ -16,7 +18,10 @@ class MyApp extends StatelessWidget {
             bottom: TabBar(
               labelStyle: TextStyle(fontSize: 15),
               tabs: [
-                Tab(text: 'First Aid', icon: Icon(Icons.accessibility_outlined)),
+                Tab(
+                  text: 'First Aid',
+                  icon: Icon(Icons.accessibility_outlined),
+                ),
                 Tab(text: 'Call', icon: Icon(Icons.add_ic_call_sharp)),
                 Tab(text: 'Locate', icon: Icon(Icons.add_location_alt_sharp)),
               ],
@@ -63,7 +68,6 @@ class MyApp extends StatelessWidget {
                                 )
                               ],
                             )),
-                        
                       ),
                     ),
                     Container(
@@ -266,7 +270,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(top: 10)),
                               Text(
-                                'i dont know',
+                                'I don\'t know',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )
@@ -277,7 +281,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Center(child: Text("Add numbers to call")),
-              Center(child: Text("Nearest hospitals location")),
+              LocationInstance(),
             ],
           ),
         ),
@@ -285,4 +289,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
