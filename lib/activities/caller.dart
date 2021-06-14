@@ -3,7 +3,6 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 class Caller extends StatelessWidget {
-
   void customLaunch(command) async {
     if (await canLaunch(command)) {
       await launch(command);
@@ -23,7 +22,10 @@ class Caller extends StatelessWidget {
           children: <Widget>[
             ListTile(
               leading: Icon(Icons.add_ic_call_sharp),
-              title: Text('Police: 100', style: TextStyle(fontSize: 25),),
+              title: Text(
+                'Police: 100',
+                style: TextStyle(fontSize: 25),
+              ),
               onTap: () {
                 customLaunch('tel: 9518728700');
               },
@@ -36,7 +38,10 @@ class Caller extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.add_ic_call_sharp),
-              title: Text('Ambulance: 102 ', style: TextStyle(fontSize: 25),),
+              title: Text(
+                'Ambulance: 102 ',
+                style: TextStyle(fontSize: 25),
+              ),
               onTap: () {
                 customLaunch('tel: 9518728700');
               },
@@ -49,7 +54,10 @@ class Caller extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.add_ic_call_sharp),
-              title: Text('Fire: 101 ', style: TextStyle(fontSize: 25),),
+              title: Text(
+                'Fire: 101 ',
+                style: TextStyle(fontSize: 25),
+              ),
               onTap: () {
                 customLaunch('tel: 9518728700');
               },
@@ -66,8 +74,7 @@ class Caller extends StatelessWidget {
               style: TextStyle(fontSize: 35),
               decoration: InputDecoration(
                 hintText: ('Emergency contact'),
-                contentPadding:
-                EdgeInsets.symmetric(vertical: 10),
+                contentPadding: EdgeInsets.symmetric(vertical: 10),
                 border: OutlineInputBorder(),
               ),
             ),

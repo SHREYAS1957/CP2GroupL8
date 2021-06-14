@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quikk_aid/activities/callermock.dart';
 import 'package:quikk_aid/location/page_set_loca.dart';
 import './activities/side_bar.dart';
-import './activities/caller.dart';
 
 void main() {
   runApp(MyApp());
@@ -281,7 +281,7 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Caller(),
+              Calleru(),
               LocationInstance(),
             ],
           ),
