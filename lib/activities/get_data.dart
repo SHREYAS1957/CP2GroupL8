@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class setData extends StatefulWidget {
   final String t1, t2, t3;
   const setData(this.t1, this.t2, this.t3);
@@ -9,6 +10,7 @@ class setData extends StatefulWidget {
   State<StatefulWidget> createState() => _setData();
 }
 
+// ignore: camel_case_types
 class _setData extends State<setData> {
   @override
   Widget build(BuildContext context) {

@@ -86,121 +86,167 @@ class MyHome extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  child: Card(
-                      elevation: 10,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      color: Colors.red,
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(top: 50)),
-                          Icon(
-                            Icons.credit_card,
-                            size: 50,
-                            color: Colors.white,
-                          ),
-                          Padding(padding: EdgeInsets.only(top: 10)),
-                          Text(
-                            'Vertigo',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white),
-                          )
-                        ],
-                      )),
+                  child: InkWell(
+                    child: Card(
+                        elevation: 10,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        color: Colors.red,
+                        child: Column(
+                          children: [
+                            Padding(padding: EdgeInsets.only(top: 50)),
+                            Icon(
+                              Icons.credit_card,
+                              size: 50,
+                              color: Colors.white,
+                            ),
+                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Text(
+                              'Vertigo',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white),
+                            )
+                          ],
+                        )),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => setData(
+                                  'Vertigo', 'VertigoDD', 'VertigoER')));
+                    },
+                  ),
                 ),
                 Container(
-                  child: Card(
-                      elevation: 10,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      color: Colors.red,
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(top: 50)),
-                          Icon(
-                            Icons.credit_card,
-                            size: 50,
-                            color: Colors.white,
-                          ),
-                          Padding(padding: EdgeInsets.only(top: 10)),
-                          Text(
-                            'Fracture',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white),
-                          )
-                        ],
-                      )),
+                  child: InkWell(
+                    child: Card(
+                        elevation: 10,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        color: Colors.red,
+                        child: Column(
+                          children: [
+                            Padding(padding: EdgeInsets.only(top: 50)),
+                            Icon(
+                              Icons.credit_card,
+                              size: 50,
+                              color: Colors.white,
+                            ),
+                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Text(
+                              'Fracture',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white),
+                            )
+                          ],
+                        )),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => setData(
+                                  'Fracture', 'FractureER', 'FractureDD')));
+                    },
+                  ),
                 ),
                 Container(
-                  child: Card(
-                      elevation: 10,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      color: Colors.red,
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(top: 50)),
-                          Icon(
-                            Icons.credit_card,
-                            size: 50,
-                            color: Colors.white,
-                          ),
-                          Padding(padding: EdgeInsets.only(top: 10)),
-                          Text(
-                            'Amputation',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white),
-                          )
-                        ],
-                      )),
+                  child: InkWell(
+                    child: Card(
+                        elevation: 10,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        color: Colors.red,
+                        child: Column(
+                          children: [
+                            Padding(padding: EdgeInsets.only(top: 50)),
+                            Icon(
+                              Icons.credit_card,
+                              size: 50,
+                              color: Colors.white,
+                            ),
+                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Text(
+                              'Amputation',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white),
+                            )
+                          ],
+                        )),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => setData('Amputation',
+                                  'AmputationER', 'AmputationDD')));
+                    },
+                  ),
                 ),
                 Container(
-                  child: Card(
-                      elevation: 10,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      color: Colors.red,
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(top: 50)),
-                          Icon(
-                            Icons.credit_card,
-                            size: 50,
-                            color: Colors.white,
-                          ),
-                          Padding(padding: EdgeInsets.only(top: 10)),
-                          Text(
-                            'Snake Bite',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white),
-                          )
-                        ],
-                      )),
+                  child: InkWell(
+                    child: Card(
+                        elevation: 10,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        color: Colors.red,
+                        child: Column(
+                          children: [
+                            Padding(padding: EdgeInsets.only(top: 50)),
+                            Icon(
+                              Icons.credit_card,
+                              size: 50,
+                              color: Colors.white,
+                            ),
+                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Text(
+                              'Snake Bite',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white),
+                            )
+                          ],
+                        )),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => setData(
+                                  'SnakeBite', 'SnakeBiteER', 'SnakeBiteDD')));
+                    },
+                  ),
                 ),
                 Container(
-                  child: Card(
-                      elevation: 10,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      color: Colors.red,
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(top: 50)),
-                          Icon(
-                            Icons.credit_card,
-                            size: 50,
-                            color: Colors.white,
-                          ),
-                          Padding(padding: EdgeInsets.only(top: 10)),
-                          Text(
-                            'Epileptic Shock',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white),
-                          )
-                        ],
-                      )),
+                  child: InkWell(
+                    child: Card(
+                        elevation: 10,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        color: Colors.red,
+                        child: Column(
+                          children: [
+                            Padding(padding: EdgeInsets.only(top: 50)),
+                            Icon(
+                              Icons.credit_card,
+                              size: 50,
+                              color: Colors.white,
+                            ),
+                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Text(
+                              'Epileptic Shock',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white),
+                            )
+                          ],
+                        )),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => setData('Epileptic Shock',
+                                  'Epileptic ShockER', 'Epileptic ShockDD')));
+                    },
+                  ),
                 ),
                 Container(
+                    child: InkWell(
                   child: Card(
                       elevation: 10,
                       shape: RoundedRectangleBorder(
@@ -222,8 +268,16 @@ class MyHome extends StatelessWidget {
                           )
                         ],
                       )),
-                ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => setData(
+                                'Drowning', 'DrowningER', 'DrowningDD')));
+                  },
+                )),
                 Container(
+                    child: InkWell(
                   child: Card(
                       elevation: 10,
                       shape: RoundedRectangleBorder(
@@ -245,52 +299,76 @@ class MyHome extends StatelessWidget {
                           )
                         ],
                       )),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => setData('Heart Attack',
+                                'Heart AttackER', 'Heart AttackDD')));
+                  },
+                )),
+                Container(
+                  child: InkWell(
+                    child: Card(
+                        elevation: 10,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        color: Colors.red,
+                        child: Column(
+                          children: [
+                            Padding(padding: EdgeInsets.only(top: 50)),
+                            Icon(
+                              Icons.credit_card,
+                              size: 50,
+                              color: Colors.white,
+                            ),
+                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Text(
+                              'Burns',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white),
+                            )
+                          ],
+                        )),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  setData('Burns', 'BurnsER', 'BurnsDD')));
+                    },
+                  ),
                 ),
                 Container(
-                  child: Card(
-                      elevation: 10,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      color: Colors.red,
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(top: 50)),
-                          Icon(
-                            Icons.credit_card,
-                            size: 50,
-                            color: Colors.white,
-                          ),
-                          Padding(padding: EdgeInsets.only(top: 10)),
-                          Text(
-                            'Burns',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white),
-                          )
-                        ],
-                      )),
-                ),
-                Container(
-                  child: Card(
-                      elevation: 10,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      color: Colors.red,
-                      child: Column(
-                        children: [
-                          Padding(padding: EdgeInsets.only(top: 50)),
-                          Icon(
-                            Icons.credit_card,
-                            size: 50,
-                            color: Colors.white,
-                          ),
-                          Padding(padding: EdgeInsets.only(top: 10)),
-                          Text(
-                            'I don\'t know',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white),
-                          )
-                        ],
-                      )),
+                  child: InkWell(
+                      child: Card(
+                          elevation: 10,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          color: Colors.red,
+                          child: Column(
+                            children: [
+                              Padding(padding: EdgeInsets.only(top: 50)),
+                              Icon(
+                                Icons.credit_card,
+                                size: 50,
+                                color: Colors.white,
+                              ),
+                              Padding(padding: EdgeInsets.only(top: 10)),
+                              Text(
+                                'I don\'t know',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(color: Colors.white),
+                              )
+                            ],
+                          )),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => setData('I don\'t know',
+                                    'I don\'t knowER', 'I don\'t knowDD')));
+                      }),
                 ),
               ],
             ),
