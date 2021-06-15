@@ -2,14 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 class Calleru extends StatelessWidget {
-  /*void customLaunch(command) async {
-    if (await canLaunch(command)) {
-      await launch(command);
-    } else {
-      print(' could not launch $command');
-    }
-  }*/
-
   @override
   Widget build(BuildContext context) {
     var _number;
@@ -149,7 +141,7 @@ class Calleru extends StatelessWidget {
                 decoration: InputDecoration(
                     hintText: ('Emergency contact'),
                     contentPadding:
-                        EdgeInsets.symmetric(vertical: 10, horizontal: 95),
+                        EdgeInsets.symmetric(vertical: 10, horizontal: 90),
                     border: OutlineInputBorder(),
                     alignLabelWithHint: true),
               ),

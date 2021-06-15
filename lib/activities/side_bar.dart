@@ -58,6 +58,13 @@ class Sidebar extends StatelessWidget {
             ),
             onTap: null,
           ),
+          ListTile(
+            leading: Icon(Icons.chat_bubble),
+            title: Text(
+              'Chat-bot',
+              style: TextStyle(fontSize: 18),
+            ),
+          )
         ],
       ),
     );
