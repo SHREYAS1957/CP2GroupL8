@@ -137,7 +137,8 @@ class Calleru extends StatelessWidget {
               child: TextField(
                 controller: numbercon,
                 keyboardType: TextInputType.phone,
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 20, ),
+                textAlign: TextAlign.center,
                 decoration: InputDecoration(
                     hintText: ('Emergency contact'),
                     contentPadding:

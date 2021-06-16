@@ -80,8 +80,7 @@ class MyHome extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => setData(
-                                  'Choking', 'ChokingER', 'ChokingDD')));
+                              builder: (context) => setData('Choking')));
                     },
                   ),
                 ),
@@ -112,8 +111,7 @@ class MyHome extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => setData(
-                                  'Vertigo', 'VertigoDD', 'VertigoER')));
+                              builder: (context) => setData('Vertigo')));
                     },
                   ),
                 ),
@@ -144,8 +142,7 @@ class MyHome extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => setData(
-                                  'Fracture', 'FractureER', 'FractureDD')));
+                              builder: (context) => setData('Fracture')));
                     },
                   ),
                 ),
@@ -176,8 +173,9 @@ class MyHome extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => setData('Amputation',
-                                  'AmputationER', 'AmputationDD')));
+                              builder: (context) => setData(
+                                    'Amputation',
+                                  )));
                     },
                   ),
                 ),
@@ -208,8 +206,7 @@ class MyHome extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => setData(
-                                  'SnakeBite', 'SnakeBiteER', 'SnakeBiteDD')));
+                              builder: (context) => setData('Snake Bite')));
                     },
                   ),
                 ),
@@ -240,8 +237,8 @@ class MyHome extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => setData('Epileptic Shock',
-                                  'Epileptic ShockER', 'Epileptic ShockDD')));
+                              builder: (context) =>
+                                  setData('Epileptic Shock')));
                     },
                   ),
                 ),
@@ -272,8 +269,7 @@ class MyHome extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => setData(
-                                'Drowning', 'DrowningER', 'DrowningDD')));
+                            builder: (context) => setData('Drowning')));
                   },
                 )),
                 Container(
@@ -303,8 +299,7 @@ class MyHome extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => setData('Heart Attack',
-                                'Heart AttackER', 'Heart AttackDD')));
+                            builder: (context) => setData('Heart Attack')));
                   },
                 )),
                 Container(
@@ -334,8 +329,7 @@ class MyHome extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) =>
-                                  setData('Burns', 'BurnsER', 'BurnsDD')));
+                              builder: (context) => setData('Burns')));
                     },
                   ),
                 ),
@@ -362,13 +356,7 @@ class MyHome extends StatelessWidget {
                               )
                             ],
                           )),
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => setData('I don\'t know',
-                                    'I don\'t knowER', 'I don\'t knowDD')));
-                      }),
+                      onTap: () {}),
                 ),
               ],
             ),
