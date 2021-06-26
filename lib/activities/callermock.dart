@@ -45,8 +45,8 @@ class Calleru extends StatelessWidget {
               onTap: () {
                 showDialog(
                   context: context,
-                  builder: (BuildContext context) => _buildPopupDialog(context,
-                      titleu: 'Police', numberu: '7620982430'),
+                  builder: (BuildContext context) =>WidgetBuilder(
+                      'Police','7620982430'),
                 );
               },
             ),
@@ -84,8 +84,8 @@ class Calleru extends StatelessWidget {
               onTap: () {
                 showDialog(
                   context: context,
-                  builder: (BuildContext context) => _buildPopupDialog(context,
-                      titleu: 'Ambulance', numberu: '7620982430'),
+                  builder: (BuildContext context) => WidgetBuilder(
+                      'an Ambulance','7620982430'),
                 );
               },
             ),
@@ -123,8 +123,8 @@ class Calleru extends StatelessWidget {
               onTap: () {
                 showDialog(
                   context: context,
-                  builder: (BuildContext context) => _buildPopupDialog(context,
-                      titleu: 'Fire Department', numberu: '7620982430'),
+                  builder: (BuildContext context) => WidgetBuilder(
+                      'Fire Department','7620982430'),
                 );
               },
             ),
@@ -165,9 +165,12 @@ class Calleru extends StatelessWidget {
   }
 }
 
-Widget _buildPopupDialog(BuildContext context,
-    {required String titleu, required String numberu}) {
-  return new AlertDialog(
+class WidgetBuilder extends StatelessWidget{
+  final String titleu,numberu;
+  const WidgetBuilder(this.titleu, this.numberu);
+  @override
+  Widget build(BuildContext context) {
+    return new AlertDialog(
     title: const Text('Warning'),
     content: new Column(
       mainAxisSize: MainAxisSize.min,
@@ -193,4 +196,8 @@ Widget _buildPopupDialog(BuildContext context,
           child: const Text("No"))
     ],
   );
+  }
+
 }
+
+

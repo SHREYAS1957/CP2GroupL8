@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 List K = []; //This List will hold steps
+// ignore: non_constant_identifier_names
 List Check = [
   'Choking',
   'Vertigo',
@@ -11,7 +13,7 @@ List Check = [
   'Epileptic Shock',
   'Drowning',
   'Heart Attack',
-  'Burns'
+  'Burns',
 ]; //This list contains all problems
 int? ch; // This int is for holding choices
 
@@ -42,8 +44,8 @@ class _setData extends State<setData> {
           'Step 1: Give 5 back blows. Stand to the side and just behind a choking adult. For a child, kneel down behind. Place one arm across the person\'s chest for support. Bend the person over at the waist so that the upper body is parallel with the ground. Deliver five separate back blows between the person\'s shoulder blades with the heel of your hand.',
           'Step 2: Give 5 abdominal thrusts. Perform five abdominal thrusts (also known as the Heimlich maneuver).',
           'Step 3: Alternate between 5 blows and 5 thrusts until the blockage is dislodged.',
-          'To perform abdominal thrusts (Heimlich maneuver) on someone else:\n\n\t\t\t1. Stand behind the person. Place \n\t\t\tone foot slightly in front of the other \n\t\t\tfor balance. Wrap your arms around \n\t\t\tthe waist. Tip the person forward \n\t\t\tslightly. If a child is choking, kneel \n\t\t\tdown behind the child.\n\n\t\t\t2. Make a fist with one hand.\n\t\t\tPosition it slightly above the \n\t\t\tperson\'s navel.\n\n\t\t\t3. Grasp the fist with the other\n\t\t\thand. Press hard into the abdomen \n\t\t\twith a quick, upward thrust — as if \n\t\t\ttrying to lift the person up.\n\n\t\t\t4. Perform between six and 10 \n\t\t\tabdominal thrusts until the \n\t\t\tblockage is dislodged.\n',
-          'To clear the airway of an unconscious person:\n\n\t\t\t1. Lower the person on his or her \n\t\t\tback onto the floor, arms to the \n\t\t\tside.\n\n\t\t\t2. Clear the airway. If a blockage is \n\t\t\tvisible at the back of the throat or \n\t\t\thigh in the throat, reach a finger into \n\t\t\tthe mouth and sweep out the \n\t\t\tcause of the blockage. Don\'t try a \n\t\t\tfinger sweep if you can\'t see the \n\t\t\tobject. Be careful not to push the \n\t\t\tfood or object deeper into the \n\t\t\tairway, which can happen easily in \n\t\t\tyoung children.\n\n\t\t\t3. Begin CPR if the object remains \n\t\t\tlodged and the person doesn\'t \n\t\t\trespond after you take the above \n\t\t\tmeasures. The chest compressions \n\t\t\tused in CPR may dislodge the \n\t\t\tobject. Remember to recheck the \n\t\t\tmouth periodically.\n'
+          'To perform abdominal thrusts (Heimlich maneuver) on someone else:\n\n\t\t\t1. Stand behind the person. Place \n\t\t\tone foot slightly in front of the other\n\t\t\tfor balance. Wrap your arms around\n\t\t\tthe waist. Tip the person forward \n\t\t\tslightly. If a child is choking, kneel \n\t\t\tdown behind the child.\n\n\t\t\t2. Make a fist with one hand.\n\t\t\tPosition it slightly above the \n\t\t\tperson\'s navel.\n\n\t\t\t3. Grasp the fist with the other\n\t\t\thand. Press hard into the abdomen \n\t\t\twith a quick, upward thrust — as if \n\t\t\ttrying to lift the person up.\n\n\t\t\t4. Perform between six and 10 \n\t\t\tabdominal thrusts until the \n\t\t\tblockage is dislodged.\n',
+          'To clear the airway of an unconscious person:\n\n\t\t\t1. Lower the person on his or her \n\t\t\tback onto the floor, arms to the \n\t\t\tside.\n\n\t\t\t2. Clear the airway. If a blockage is \n\t\t\tvisible at the back of the throat or \n\t\t\thigh in the throat, reach a finger into\n\t\t\tthe mouth and sweep out the \n\t\t\tcause of the blockage. Don\'t try a \n\t\t\tfinger sweep if you can\'t see the \n\t\t\tobject. Be careful not to push the \n\t\t\tfood or object deeper into the \n\t\t\tairway, which can happen easily in \n\t\t\tyoung children.\n\n\t\t\t3. Begin CPR if the object remains \n\t\t\tlodged and the person doesn\'t \n\t\t\trespond after you take the above \n\t\t\tmeasures. The chest compressions \n\t\t\tused in CPR may dislodge the \n\t\t\tobject. Remember to recheck the \n\t\t\tmouth periodically.\n'
         ]; //Chocking
         break;
       case 1:
@@ -78,7 +80,7 @@ class _setData extends State<setData> {
         break; //Snake Bite
       case 5:
         K = [
-          'Call Emergency Sevices if:\n\n\t\t1. It\'s a child\'s first seizure.\n\n\t\t2. The seizure lasts longer than 5 \n\t\tminutes.\n\n\t\t3. Another seizure begins soon after \n\t\tthe first.\n\n\t\t4. The person doesn\'t "wake up" \n\t\tafter the movements have stopped.\n\n\t\tThe person was injured during the \n\t\tseizure.\n',
+          'Call Emergency Services if:\n\n\t\t1. It\'s a child\'s first seizure.\n\n\t\t2. The seizure lasts longer than 5 \n\t\tminutes.\n\n\t\t3. Another seizure begins soon after \n\t\tthe first.\n\n\t\t4. The person doesn\'t "wake up" \n\t\tafter the movements have stopped.\n\n\t\tThe person was injured during the \n\t\tseizure.\n',
           'For someone having a seizure:\n\n\t\t1. Give them room. Keep other \n\t\tpeople back.\n\n\t\t2. Clear hard or sharp objects, like \n\t\tglasses and furniture, away.\n\n\t\t3. Cushion their head.\n\n\t\t4. Loosen clothing around their \n\t\tneck, if you can safely.\n\n\t\t5. Don\'t try to hold them down or \n\t\tstop their movements.\n',
         ];
         break; // Epileptic Shock
@@ -133,21 +135,79 @@ class _setData extends State<setData> {
           ),
           body: ListView.builder(
             itemBuilder: (BuildContext context, int index) {
-              return Card(
-                elevation: 10,
-                child: Container(
-                  padding:
-                      EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
-                  child: Text(
-                    K[index].toString(),
-                    style: TextStyle(fontSize: 20),
+              return InkWell(
+                child: Card(
+                  elevation: 10,
+                  child: Container(
+                    padding: EdgeInsets.only(
+                        top: 20, bottom: 20, left: 20, right: 20),
+                    child: Text(
+                      K[index].toString(),
+                      style: TextStyle(fontSize: 20),
+                    ),
                   ),
+                  margin: EdgeInsets.only(top: 10, left: 10, right: 10),
                 ),
-                margin: EdgeInsets.only(top: 10, left: 10, right: 10),
+                onTap: () {
+                  if (K[index].toString().contains('Call Emergency if') ||
+                      K[index]
+                          .toString()
+                          .contains('Call for emergency help if') ||
+                      K[index].toString().contains('Call Emergency Services') ||
+                      K[index]
+                          .toString()
+                          .contains('Call Emergency Services if') ||
+                      K[index]
+                          .toString()
+                          .contains('Call for Emergency help if') ||
+                      K[index]
+                          .toString()
+                          .contains('Call the Emergency Services')) {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) =>
+                          WidgetBuilder('an Ambulance', '7620982430'),
+                    );
+                  } else {}
+                },
               );
             },
             itemCount: K.length,
           ),
         ));
+  }
+}
+
+class WidgetBuilder extends StatelessWidget {
+  final String titleu, numberu;
+  const WidgetBuilder(this.titleu, this.numberu);
+  @override
+  Widget build(BuildContext context) {
+    return new AlertDialog(
+      title: const Text('Warning'),
+      content: new Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text("Do you really want to call $titleu?"),
+        ],
+      ),
+      actions: <Widget>[
+        new TextButton(
+          onPressed: () {
+            String plumber = (numberu).toString();
+            FlutterPhoneDirectCaller.callNumber(plumber);
+            Navigator.of(context).pop();
+          },
+          child: const Text('Yes'),
+        ),
+        new TextButton(
+            onPressed: () {
+              print("bruh");
+              Navigator.of(context).pop();
+            },
+            child: const Text("No"))
+      ],
+    );
   }
 }
