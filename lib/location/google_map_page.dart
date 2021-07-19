@@ -38,7 +38,7 @@ class PageState extends State<GoogleMapPage> {
               child: GoogleMap(
                 initialCameraPosition:
                     CameraPosition(target: model.locationPosition!, zoom: 14),
-                markers: setMarkers(),
+                //markers: setMarkers(),
                 myLocationEnabled: true,
                 myLocationButtonEnabled: false,
                 onMapCreated: (GoogleMapController _controller) {
@@ -71,7 +71,4 @@ class PageState extends State<GoogleMapPage> {
     
   }
 
-  setMarkers() async {
-    
-  }
 }

@@ -43,14 +43,6 @@ class Sidebar extends StatelessWidget {
                 ],
               )),
           ListTile(
-            leading: Icon(Icons.language_sharp),
-            title: Text(
-              'Language',
-              style: TextStyle(fontSize: 18),
-            ),
-            onTap: null,
-          ),
-          ListTile(
             leading: Icon(Icons.settings),
             title: Text(
               'Settings',
