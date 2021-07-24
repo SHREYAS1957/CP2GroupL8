@@ -63,11 +63,7 @@ class MyHome extends StatelessWidget {
                         child: Column(
                           children: [
                             Padding(padding: EdgeInsets.only(top: 50)),
-                            Icon(
-                              Icons.credit_card,
-                              size: 50,
-                              color: Colors.white,
-                            ),
+                            new Image.asset('assets/images/chock.png',width:250,height:70),
                             Padding(padding: EdgeInsets.only(top: 10)),
                             Text(
                               'Chocking',
@@ -94,11 +90,7 @@ class MyHome extends StatelessWidget {
                         child: Column(
                           children: [
                             Padding(padding: EdgeInsets.only(top: 50)),
-                            Icon(
-                              Icons.credit_card,
-                              size: 50,
-                              color: Colors.white,
-                            ),
+                            new Image.asset('assets/images/vert.png',width:250,height:70),
                             Padding(padding: EdgeInsets.only(top: 10)),
                             Text(
                               'Vertigo',
@@ -125,11 +117,7 @@ class MyHome extends StatelessWidget {
                         child: Column(
                           children: [
                             Padding(padding: EdgeInsets.only(top: 50)),
-                            Icon(
-                              Icons.credit_card,
-                              size: 50,
-                              color: Colors.white,
-                            ),
+                            new Image.asset('assets/images/frac.png',width:250,height:70),
                             Padding(padding: EdgeInsets.only(top: 10)),
                             Text(
                               'Fracture',
@@ -156,11 +144,7 @@ class MyHome extends StatelessWidget {
                         child: Column(
                           children: [
                             Padding(padding: EdgeInsets.only(top: 50)),
-                            Icon(
-                              Icons.credit_card,
-                              size: 50,
-                              color: Colors.white,
-                            ),
+                            new Image.asset('assets/images/amp.png',width:250,height:70),
                             Padding(padding: EdgeInsets.only(top: 10)),
                             Text(
                               'Amputation',
@@ -189,11 +173,7 @@ class MyHome extends StatelessWidget {
                         child: Column(
                           children: [
                             Padding(padding: EdgeInsets.only(top: 50)),
-                            Icon(
-                              Icons.credit_card,
-                              size: 50,
-                              color: Colors.white,
-                            ),
+                            new Image.asset('assets/images/snek.png',width:250,height:70),
                             Padding(padding: EdgeInsets.only(top: 10)),
                             Text(
                               'Snake Bite',
@@ -220,11 +200,7 @@ class MyHome extends StatelessWidget {
                         child: Column(
                           children: [
                             Padding(padding: EdgeInsets.only(top: 50)),
-                            Icon(
-                              Icons.credit_card,
-                              size: 50,
-                              color: Colors.white,
-                            ),
+                            new Image.asset('assets/images/eps.png',width:250,height:70),
                             Padding(padding: EdgeInsets.only(top: 10)),
                             Text(
                               'Epileptic Shock',
@@ -252,11 +228,7 @@ class MyHome extends StatelessWidget {
                       child: Column(
                         children: [
                           Padding(padding: EdgeInsets.only(top: 50)),
-                          Icon(
-                            Icons.credit_card,
-                            size: 50,
-                            color: Colors.white,
-                          ),
+                          new Image.asset('assets/images/drow.png',width:250,height:70),
                           Padding(padding: EdgeInsets.only(top: 10)),
                           Text(
                             'Drowning',
@@ -282,11 +254,7 @@ class MyHome extends StatelessWidget {
                       child: Column(
                         children: [
                           Padding(padding: EdgeInsets.only(top: 50)),
-                          Icon(
-                            Icons.credit_card,
-                            size: 50,
-                            color: Colors.white,
-                          ),
+                          new Image.asset('assets/images/heart.png',width:250,height:70),
                           Padding(padding: EdgeInsets.only(top: 10)),
                           Text(
                             'Heart attack',
@@ -312,11 +280,7 @@ class MyHome extends StatelessWidget {
                         child: Column(
                           children: [
                             Padding(padding: EdgeInsets.only(top: 50)),
-                            Icon(
-                              Icons.credit_card,
-                              size: 50,
-                              color: Colors.white,
-                            ),
+                            new Image.asset('assets/images/burn.png',width:250,height:70),
                             Padding(padding: EdgeInsets.only(top: 10)),
                             Text(
                               'Burns',
