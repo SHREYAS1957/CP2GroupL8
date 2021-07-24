@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quikk_aid/chatbot/chat_home.dart';
 
 class Sidebar extends StatelessWidget {
   @override
@@ -56,6 +57,12 @@ class Sidebar extends StatelessWidget {
               'Chat-bot',
               style: TextStyle(fontSize: 18),
             ),
+            onTap: (){
+               Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ChatHome()));
+            },
           )
         ],
       ),
