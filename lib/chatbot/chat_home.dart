@@ -27,7 +27,7 @@ class _ChatHome extends State<ChatHome> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Chatbot'),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.red[800],
         ),
         body: Center(
             // Center is a layout widget. It takes a single child and positions it

@@ -44,12 +44,12 @@ class Sidebar extends StatelessWidget {
                 ],
               )),
           ListTile(
-            leading: Icon(Icons.settings),
+            leading: Icon(Icons.info),
             title: Text(
-              'Settings',
+              'Info',
               style: TextStyle(fontSize: 18),
             ),
-            onTap: null,
+            onTap: () {},
           ),
           ListTile(
             leading: Icon(Icons.chat_bubble),
@@ -57,11 +57,9 @@ class Sidebar extends StatelessWidget {
               'Chat-bot',
               style: TextStyle(fontSize: 18),
             ),
-            onTap: (){
-               Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ChatHome()));
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => ChatHome()));
             },
           )
         ],

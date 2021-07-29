@@ -9,6 +9,7 @@ import 'package:quikk_aid/location/provider/location_provider.dart';
 List<Marker> allPlaces = [];
 List<NearbyPlacesD.PlacesSearchResult> places = [];
 
+
 class GoogleMapPage extends StatefulWidget {
   @override
   PageState createState() => PageState();
@@ -38,7 +39,6 @@ class PageState extends State<GoogleMapPage> {
               child: GoogleMap(
                 initialCameraPosition:
                     CameraPosition(target: model.locationPosition!, zoom: 14),
-                //markers: setMarkers(),
                 myLocationEnabled: true,
                 myLocationButtonEnabled: false,
                 onMapCreated: (GoogleMapController _controller) {
@@ -68,7 +68,5 @@ class PageState extends State<GoogleMapPage> {
             lat: locationPosition?.latitude, lng: locationPosition?.longitude),
         1500,
         type: "hospital");
-    
   }
-
 }
