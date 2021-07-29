@@ -56,6 +56,36 @@ class MyHome extends StatelessWidget {
               children: [
                 Container(
                   child: InkWell(
+                      child: Card(
+                          elevation: 10,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          color: Colors.red,
+                          child: Column(
+                            children: [
+                              Padding(padding: EdgeInsets.only(top: 50)),
+                              Icon(
+                                Icons.warning_amber_sharp,
+                                size: 50,
+                                color: Colors.white,
+                              ),
+                              Padding(padding: EdgeInsets.only(top: 10)),
+                              Text(
+                                'UNIDENTIFIED',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(color: Colors.white),
+                              )
+                            ],
+                          )),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => idkWidget()));
+                      }),
+                ),
+                Container(
+                  child: InkWell(
                     child: Card(
                         elevation: 10,
                         shape: RoundedRectangleBorder(
@@ -162,9 +192,7 @@ class MyHome extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => setData(
-                                    'Amputation',
-                                  )));
+                              builder: (context) => setData('Amputation',)));
                     },
                   ),
                 ),
@@ -227,11 +255,11 @@ class MyHome extends StatelessWidget {
                 ),
                 Container(
                     child: InkWell(
-                  child: Card(
-                      elevation: 10,
-                      shape: RoundedRectangleBorder(
+                      child: Card(
+                        elevation: 10,
+                        shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
-                      color: Colors.red,
+                        color: Colors.red,
                       child: Column(
                         children: [
                           Padding(padding: EdgeInsets.only(top: 50)),
@@ -306,36 +334,6 @@ class MyHome extends StatelessWidget {
                               builder: (context) => setData('Burns')));
                     },
                   ),
-                ),
-                Container(
-                  child: InkWell(
-                      child: Card(
-                          elevation: 10,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10)),
-                          color: Colors.red,
-                          child: Column(
-                            children: [
-                              Padding(padding: EdgeInsets.only(top: 50)),
-                              Icon(
-                                Icons.credit_card,
-                                size: 50,
-                                color: Colors.white,
-                              ),
-                              Padding(padding: EdgeInsets.only(top: 10)),
-                              Text(
-                                'I don\'t know',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          )),
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => idkWidget()));
-                      }),
                 ),
               ],
             ),
