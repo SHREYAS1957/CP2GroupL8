@@ -6,7 +6,7 @@ class idkWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('UNIDENTIFIED'),
+        title: Text('Unidentified'),
         backgroundColor: Colors.red,
       ),
       body: SingleChildScrollView(
@@ -102,7 +102,7 @@ class idkWidget extends StatelessWidget {
                         builder: (context) => setData('Fracture')));
               },
             ),
-            Padding(padding: EdgeInsets.only(top: 20)),
+            /* Padding(padding: EdgeInsets.only(top: 20)),
             //Amputation
             InkWell(
               child: Card(
@@ -131,7 +131,7 @@ class idkWidget extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) => setData('Amputation')));
               },
-            ),
+            ), */
             Padding(padding: EdgeInsets.only(top: 20)),
             //Snake bite
             InkWell(

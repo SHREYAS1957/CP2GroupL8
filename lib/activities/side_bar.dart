@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quikk_aid/chatbot/chat_home.dart';
+import 'package:quikk_aid/activities/information.dart';
 
 class Sidebar extends StatelessWidget {
   @override
@@ -49,7 +50,10 @@ class Sidebar extends StatelessWidget {
               'Info',
               style: TextStyle(fontSize: 18),
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Information()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.chat_bubble),
