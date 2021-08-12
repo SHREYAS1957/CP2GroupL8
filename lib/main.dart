@@ -5,6 +5,7 @@ import 'package:quikk_aid/activities/idk.dart';
 import 'package:quikk_aid/location/page_set_loca.dart';
 import './activities/side_bar.dart';
 
+
 void main() {
   runApp(MyApp());
 }
@@ -69,7 +70,7 @@ class MyHome extends StatelessWidget {
                                 size: 50,
                                 color: Colors.white,
                               ),
-                              Padding(padding: EdgeInsets.only(top: 10)),
+                              Padding(padding: EdgeInsets.only(top: 30)),
                               Text(
                                 'UNIDENTIFIED',
                                 textAlign: TextAlign.center,
@@ -192,7 +193,9 @@ class MyHome extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => setData('Amputation',)));
+                              builder: (context) => setData(
+                                    'Amputation',
+                                  )));
                     },
                   ),
                 ),
@@ -255,11 +258,11 @@ class MyHome extends StatelessWidget {
                 ),
                 Container(
                     child: InkWell(
-                      child: Card(
-                        elevation: 10,
-                        shape: RoundedRectangleBorder(
+                  child: Card(
+                      elevation: 10,
+                      shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
-                        color: Colors.red,
+                      color: Colors.red,
                       child: Column(
                         children: [
                           Padding(padding: EdgeInsets.only(top: 50)),
